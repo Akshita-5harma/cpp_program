@@ -1,14 +1,10 @@
 // Temperature conversion from fahrenheit to celsius & vice versa with user choice
-/* 
-17 Jun 21
-Mohammad Shahbaz Alam
-Program 9.1
-*/
 
 #include<iostream>
 using namespace std;
 
-int main(){
+int main()
+{
 
     int choice;
     double temp, conv_temp;
@@ -18,14 +14,16 @@ int main(){
     cout<<"2. Conversion from celsius to fahrenheit\n";
     cin>>choice;
 
-    if (choice == 1){
+    if (choice == 1)
+    {
         cout<<"Enter temperature in fahrenheit: ";
         cin>> temp ;
         conv_temp = (temp-32)/1.8;
         cout<<"The temperature in celsius is " << conv_temp <<", for " << temp << " fahrenheit";
     }
 
-    if (choice == 2){
+    if (choice == 2)
+    {
         cout<<"Enter temperature in celsius: ";
         cin>> temp ;
         conv_temp = 1.8 * temp + 32;
